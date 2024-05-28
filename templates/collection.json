@@ -1,0 +1,358 @@
+{
+  "sections": {
+    "banner": {
+      "type": "main-collection-banner",
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": false,
+        "color_scheme": "scheme-3"
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "products_per_page": 12,
+        "columns_desktop": 4,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": true,
+        "enable_quick_add": false,
+        "enable_filtering": true,
+        "filter_type": "horizontal",
+        "enable_sorting": true,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "71cbfbe8-983d-4938-8cb4-d75ee9c35da2": {
+      "type": "eva-differnece",
+      "blocks": {
+        "template--16298644013231__71cbfbe8-983d-4938-8cb4-d75ee9c35da2-difference-1": {
+          "type": "difference",
+          "settings": {
+            "difference_text": "Cruelty-Free",
+            "us_checked": true,
+            "them_checked": false
+          }
+        },
+        "template--16298644013231__71cbfbe8-983d-4938-8cb4-d75ee9c35da2-difference-2": {
+          "type": "difference",
+          "settings": {
+            "difference_text": "Affordable",
+            "us_checked": true,
+            "them_checked": false
+          }
+        },
+        "32bcc6db-78cb-4e9b-847a-95e7fcd4ed06": {
+          "type": "difference",
+          "settings": {
+            "difference_text": "Clean Ingredients",
+            "us_checked": true,
+            "them_checked": false
+          }
+        },
+        "12a11df2-4ac5-4b99-9b9f-9df9b76b50be": {
+          "type": "difference",
+          "settings": {
+            "difference_text": "Harmful Synthetics",
+            "us_checked": false,
+            "them_checked": true
+          }
+        },
+        "7808892a-d58c-4917-b33b-2f110e9e4e05": {
+          "type": "difference",
+          "settings": {
+            "difference_text": "Animal Testing",
+            "us_checked": false,
+            "them_checked": true
+          }
+        },
+        "32952369-31fe-4d31-907e-395c4aaebcad": {
+          "type": "difference",
+          "settings": {
+            "difference_text": "Misleading Claims",
+            "us_checked": false,
+            "them_checked": true
+          }
+        }
+      },
+      "block_order": [
+        "template--16298644013231__71cbfbe8-983d-4938-8cb4-d75ee9c35da2-difference-1",
+        "template--16298644013231__71cbfbe8-983d-4938-8cb4-d75ee9c35da2-difference-2",
+        "32bcc6db-78cb-4e9b-847a-95e7fcd4ed06",
+        "12a11df2-4ac5-4b99-9b9f-9df9b76b50be",
+        "7808892a-d58c-4917-b33b-2f110e9e4e05",
+        "32952369-31fe-4d31-907e-395c4aaebcad"
+      ],
+      "settings": {
+        "title": "EVA NATURALS DIFFERENCE",
+        "heading_size": "h1",
+        "color_scheme": "scheme-3",
+        "step_1_txt": "Premium skincare products at prices that are within reach for a wide range of customers.",
+        "step_2_txt": "Dedicated to clean beauty, which means our products are skin safe and ethically sourced.",
+        "step_3_txt": "Formulas comprised of consciously curated botanicals and safe, science-based actives.",
+        "ourstory_link": "shopify:\/\/pages\/about-us",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "custom_class": ""
+      }
+    },
+    "81c4e79c-e962-4312-b3d0-64db1718f639": {
+      "type": "eva-before-after",
+      "blocks": {
+        "template--16298644013231__81c4e79c-e962-4312-b3d0-64db1718f639-before_after-1": {
+          "type": "before_after",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/b_f_f7161d30-02f9-4d44-b048-7aa635d70cc8.jpg",
+            "text": "This was my first time using a serum so I was a little confused by the dropper, but now that I comfortable with it, I love this product! I actually ordered twice, it's so good!",
+            "name": "Cassie T."
+          }
+        },
+        "99676bcf-83fe-4583-b382-6eedb86ac880": {
+          "type": "before_after",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Britt-Harris2.jpg",
+            "text": "These photos really don’t do my skin justice as I feel I have my confidence back because folks aren’t staring at my swollen, cystic acne. I’m almost finished with my second bottle...MY FACE IS SOOOOO CLEAR! ",
+            "name": "Britt H."
+          }
+        },
+        "7a4208a4-4210-49ce-b9a8-792d9e5fad22": {
+          "type": "before_after",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Sarah-sippel.jpg",
+            "text": "So I bought this product over a year ago because my cousins wife skin looked amazing at 30 and I wanted to know her secret... this definitely made my scarring and skin look more flawless!",
+            "name": "Sarah S."
+          }
+        }
+      },
+      "block_order": [
+        "template--16298644013231__81c4e79c-e962-4312-b3d0-64db1718f639-before_after-1",
+        "99676bcf-83fe-4583-b382-6eedb86ac880",
+        "7a4208a4-4210-49ce-b9a8-792d9e5fad22"
+      ],
+      "settings": {
+        "heading": "JOIN OVER 1.5 MILLION CUSTOMERS ON THEIR SKIN HEALING JOURNEY!",
+        "heading_size": "h1",
+        "post_limit": 3,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "1c35070e-1944-457e-952b-5b8e87dfa1f4": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--16298644013231__1c35070e-1944-457e-952b-5b8e87dfa1f4-column-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/3xicons.svg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16298644013231__1c35070e-1944-457e-952b-5b8e87dfa1f4-column-1"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "subtitle": "",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 1,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "custom_class": ""
+      }
+    },
+    "85645bca-6c32-462c-9608-a6d6015e9236": {
+      "type": "eva-magazine-reviews",
+      "blocks": {
+        "template--16298644013231__85645bca-6c32-462c-9608-a6d6015e9236-magazine-1": {
+          "type": "magazine",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/people-logo.svg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "\"...Sensitive, Oily, And Acne-Prone Situations are Left Blackhead‑Free, and Fine Lines Turned Hardly Noticeable.\"",
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "template--16298644013231__85645bca-6c32-462c-9608-a6d6015e9236-magazine-2": {
+          "type": "magazine",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/instyle-logo.svg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "\"This $13 anti-aging serum is a 'miracle product' for dark circles, fine lines, and acne.\"",
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "21ec2ee1-0d24-4994-858d-73f288dc9a79": {
+          "type": "magazine",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/glamour-logo.svg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "\"I swear my skin looked better. not only that, there's salicylic acid in it too, so it workes to clear my blemishes.\"",
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--16298644013231__85645bca-6c32-462c-9608-a6d6015e9236-magazine-1",
+        "template--16298644013231__85645bca-6c32-462c-9608-a6d6015e9236-magazine-2",
+        "21ec2ee1-0d24-4994-858d-73f288dc9a79"
+      ],
+      "settings": {
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand",
+        "color_scheme": ""
+      }
+    },
+    "bb1f9023-ce08-45e0-9559-5446a1a9f2ae": {
+      "type": "featured-blog",
+      "settings": {
+        "heading": "BLOGS",
+        "heading_size": "h1",
+        "blog": "news",
+        "post_limit": 3,
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "show_image": true,
+        "show_date": true,
+        "show_author": false,
+        "show_view_all": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "4b755efd-57c3-4ea1-860f-7486ae1edaa7": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--16298644013231__4b755efd-57c3-4ea1-860f-7486ae1edaa7-column-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/90-days.svg",
+            "title": "100% MONEY BACK GUARANTEE",
+            "text": "<p>If your order arrives with any issues or defects, just let us know. You’re coverd by our 90-day money back guarantee.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--16298644013231__4b755efd-57c3-4ea1-860f-7486ae1edaa7-column-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/secure.svg",
+            "title": "SECURE ORDERING",
+            "text": "<p>Safety is our top priority. With our secure ordering system, you can rest assured knowing your personal information is carefully protected<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--16298644013231__4b755efd-57c3-4ea1-860f-7486ae1edaa7-column-3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/returns.svg",
+            "title": "EASY RETURNS",
+            "text": "<p>Quick, easy adn convenient, we make the return process hassle-free with no questions asked.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16298644013231__4b755efd-57c3-4ea1-860f-7486ae1edaa7-column-1",
+        "template--16298644013231__4b755efd-57c3-4ea1-860f-7486ae1edaa7-column-2",
+        "template--16298644013231__4b755efd-57c3-4ea1-860f-7486ae1edaa7-column-3"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "subtitle": "",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 20,
+        "padding_bottom": 0,
+        "custom_class": "guarantees-section"
+      }
+    },
+    "c956d8e9-d27d-4af0-b008-2ab1b05604d6": {
+      "type": "newsletter",
+      "blocks": {
+        "template--16298644013231__c956d8e9-d27d-4af0-b008-2ab1b05604d6-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Subscribe to our emails",
+            "heading_size": "h1"
+          }
+        },
+        "template--16298644013231__c956d8e9-d27d-4af0-b008-2ab1b05604d6-paragraph-1": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Be the first to know about new collections and exclusive offers.<\/p>"
+          }
+        },
+        "template--16298644013231__c956d8e9-d27d-4af0-b008-2ab1b05604d6-email_form-1": {
+          "type": "email_form",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "template--16298644013231__c956d8e9-d27d-4af0-b008-2ab1b05604d6-heading-1",
+        "template--16298644013231__c956d8e9-d27d-4af0-b008-2ab1b05604d6-paragraph-1",
+        "template--16298644013231__c956d8e9-d27d-4af0-b008-2ab1b05604d6-email_form-1"
+      ],
+      "settings": {
+        "color_scheme": "scheme-3",
+        "full_width": true,
+        "custom_class": "mobile-newsletter-form",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "product-grid",
+    "71cbfbe8-983d-4938-8cb4-d75ee9c35da2",
+    "81c4e79c-e962-4312-b3d0-64db1718f639",
+    "1c35070e-1944-457e-952b-5b8e87dfa1f4",
+    "85645bca-6c32-462c-9608-a6d6015e9236",
+    "bb1f9023-ce08-45e0-9559-5446a1a9f2ae",
+    "4b755efd-57c3-4ea1-860f-7486ae1edaa7",
+    "c956d8e9-d27d-4af0-b008-2ab1b05604d6"
+  ]
+}

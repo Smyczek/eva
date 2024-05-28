@@ -1,0 +1,16 @@
+.eva-loved-by  {
+    background: #5691A1;
+}
+
+.eva-loved-by h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.eva-loved-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}

@@ -1,0 +1,100 @@
+{
+  "name": "t:sections.header.name",
+  "type": "header",
+  "sections": {
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "blocks": {
+        "announcement-bar-0": {
+          "type": "announcement",
+          "settings": {
+            "text": "Free Shipping On Orders Over $50",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "announcement-bar-0"
+      ],
+      "settings": {
+        "color_scheme": "scheme-3",
+        "show_line_separator": true,
+        "show_social": false,
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "enable_country_selector": false,
+        "enable_language_selector": false
+      }
+    },
+    "header": {
+      "type": "header",
+      "blocks": {
+        "menu_image_PjRNqa": {
+          "type": "menu-image",
+          "settings": {
+            "menuimage": "shopify:\/\/shop_images\/best-seller-g.jpg",
+            "menuimage_menu": "left-menu-2",
+            "menuimage_submenu": 1,
+            "menuimage_link": "shopify:\/\/collections\/best-seller",
+            "menuimage_txt": "Best Sellers"
+          }
+        },
+        "menu_image_wQFVyz": {
+          "type": "menu-image",
+          "settings": {
+            "menuimage": "shopify:\/\/shop_images\/New-releases-c.jpg",
+            "menuimage_menu": "left-menu",
+            "menuimage_submenu": 1,
+            "menuimage_link": "shopify:\/\/collections\/new-arrivals",
+            "menuimage_txt": "New Releases"
+          }
+        },
+        "menu_image_chTiEj": {
+          "type": "menu-image",
+          "settings": {
+            "menuimage": "shopify:\/\/shop_images\/bundles2_2.jpg",
+            "menuimage_menu": "left-menu",
+            "menuimage_submenu": 1,
+            "menuimage_link": "shopify:\/\/collections\/bundle",
+            "menuimage_txt": "Bundles"
+          }
+        },
+        "menu_image_xKGrKw": {
+          "type": "menu-image",
+          "settings": {
+            "menuimage": "shopify:\/\/shop_images\/BYOB-2.jpg",
+            "menuimage_menu": "left-menu",
+            "menuimage_submenu": 1,
+            "menuimage_link": "https:\/\/evanaturals.com\/apps\/gbb\/easybundle\/1?page=addProductsPage1&currentFlow=byob",
+            "menuimage_txt": "Build Your Own Bundle"
+          }
+        }
+      },
+      "block_order": [
+        "menu_image_PjRNqa",
+        "menu_image_wQFVyz",
+        "menu_image_chTiEj",
+        "menu_image_xKGrKw"
+      ],
+      "settings": {
+        "logo_position": "middle-center",
+        "menu": "left-menu",
+        "menu_type_desktop": "mega",
+        "sticky_header_type": "on-scroll-up",
+        "show_line_separator": false,
+        "color_scheme": "scheme-1",
+        "menu_color_scheme": "",
+        "enable_country_selector": false,
+        "enable_language_selector": false,
+        "mobile_logo_position": "center",
+        "margin_bottom": 0,
+        "padding_top": 8,
+        "padding_bottom": 8
+      }
+    }
+  },
+  "order": [
+    "announcement-bar",
+    "header"
+  ]
+}

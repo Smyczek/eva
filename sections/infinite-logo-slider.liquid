@@ -1,0 +1,134 @@
+{% style %}
+    .infinite-logo-slider {
+        padding: 20px 0;
+        overflow: hidden;
+    }
+    .infinite-logo-slider h4 {
+        text-align: center;
+    }
+    .infinite-logo-slider .logo_slider {
+        --slider-inner-width: 1500px;
+        --slider-speed: {% if section.settings.speed != blank %}{{ section.settings.speed }}s{% else %}10s{% endif %};
+    }
+    @keyframes scroll {
+        0% { transform: translateX(-5%) ; }
+        100% { transform: translateX(calc((0px - var(--slider-inner-width)) - 5%))}
+    }
+    .infinite-logo-slider .logo_slider {
+        -webkit-transform: translate3d(0, 0, 0);
+        animation: scroll linear infinite var(--slider-speed);
+        width: calc(2 * var(--slider-inner-width));
+        transition: animation-play-state ease 0.3s;
+    }
+    .infinite-logo-slider .logo_slider:hover {
+        animation-play-state: paused;
+    }
+    .infinite-logo-slider .logo_slider {
+        display: flex;
+        align-items: center;
+        margin: 0;
+    }
+{% endstyle %}
+
+<div class="infinite-logo-slider">
+    <div class="page-width">
+        <h4>AS SEEN IN</h4>
+        <div class="logo_slider">
+            <div class="slider__slide">
+                {%- if section.settings.image != blank -%}
+                    {%- if section.settings.image_behavior == 'ambient' or section.settings.image_behavior == 'zoom-in' -%}
+                    {%- assign widths = '198, 432, 642, 900, 1284, 1800' -%}
+                    {%- capture sizes -%}
+                    (min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 1.6667 }}px,
+                    (min-width: 750px) calc((100vw - 130px) / 1.667), calc((100vw - 50px) / 1.667)
+                {%- endcapture -%}
+                    {%- else -%}
+                    {%- assign widths = '165, 360, 535, 750, 1070, 1500' -%}
+                    {%- capture sizes -%}
+                    (min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px,
+                    (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)
+                {%- endcapture -%}
+                    {%- endif -%}
+                    {{
+                    section.settings.image
+                    | image_url: width: 1500
+                    | image_tag: sizes: sizes, widths: widths
+                    }}
+                {%- endif -%}
+            </div>
+            <div class="slider__slide">
+                {%- if section.settings.image != blank -%}
+                    {%- if section.settings.image_behavior == 'ambient' or section.settings.image_behavior == 'zoom-in' -%}
+                    {%- assign widths = '198, 432, 642, 900, 1284, 1800' -%}
+                    {%- capture sizes -%}
+                    (min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 1.6667 }}px,
+                    (min-width: 750px) calc((100vw - 130px) / 1.667), calc((100vw - 50px) / 1.667)
+                {%- endcapture -%}
+                    {%- else -%}
+                    {%- assign widths = '165, 360, 535, 750, 1070, 1500' -%}
+                    {%- capture sizes -%}
+                    (min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px,
+                    (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)
+                {%- endcapture -%}
+                    {%- endif -%}
+                    {{
+                    section.settings.image
+                    | image_url: width: 1500
+                    | image_tag: sizes: sizes, widths: widths
+                    }}
+                {%- endif -%}
+            </div>
+            <div class="slider__slide">
+                {%- if section.settings.image != blank -%}
+                    {%- if section.settings.image_behavior == 'ambient' or section.settings.image_behavior == 'zoom-in' -%}
+                    {%- assign widths = '198, 432, 642, 900, 1284, 1800' -%}
+                    {%- capture sizes -%}
+                    (min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 1.6667 }}px,
+                    (min-width: 750px) calc((100vw - 130px) / 1.667), calc((100vw - 50px) / 1.667)
+                {%- endcapture -%}
+                    {%- else -%}
+                    {%- assign widths = '165, 360, 535, 750, 1070, 1500' -%}
+                    {%- capture sizes -%}
+                    (min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px,
+                    (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)
+                {%- endcapture -%}
+                    {%- endif -%}
+                    {{
+                    section.settings.image
+                    | image_url: width: 1500
+                    | image_tag: sizes: sizes, widths: widths
+                    }}
+                {%- endif -%}
+            </div>
+        </div>
+    </div>
+</div>
+
+{% schema %}
+{
+  "name": "Infinite Logo Slider",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "t:sections.image-with-text.settings.image.label"
+    },
+    {
+        "type": "number",
+        "id": "speed",
+        "label": "Speed",
+        "default": 10,
+        "info": "In seconds"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Infinite Logo Slider"
+    }
+  ]
+}
+{% endschema %}

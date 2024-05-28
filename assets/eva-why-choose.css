@@ -1,0 +1,45 @@
+.eva-why-choose {
+    overflow: hidden;
+    position: relative;
+}
+
+
+.eva-why-choose-bgimage {
+ display: none;
+}
+
+@media screen and (min-width: 1000px) {
+  .eva-why-choose-bgimage {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+}
+
+.eva-why-choose-content h2 {
+    margin: 0;
+    font-size: 3.3rem;
+}
+
+.eva-why-choose__title {
+    font-size: 3.1rem;
+    display: inline;
+    padding: 5px 30px 5px 10px;
+    margin-left: -10px;
+    background-color: #ACCED9CC;
+}
+
+.eva-why-choose-content ul {
+    margin-top: 1rem;
+}
+
+.eva-why-choose-content li {
+    font-size: 2.4rem;
+    line-height: 140%;
+} 

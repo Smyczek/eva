@@ -1,0 +1,39 @@
+.eva-skin-types {
+    text-align: center;
+    background-color: #8EBCCA;
+}
+
+.eva-skin-types ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px
+}
+.eva-skin-types h2 {
+    font-weight: 700;
+    margin-top: 0;
+}
+
+.eva-skin-types li {
+    background-color: rgba(255,255,255, .15);
+}
+
+.eva-skin-types .eva-skin-benefits-content {
+    margin-bottom: 20px;
+}
+
+.eva-skin-types .eva-skin-benefits-content li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 20px;
+}
+
+.eva-skin-types li img {
+    margin-right: 10px;
+}
+
+.eva-skin-types .eva-skin-type-content li {
+    padding: 0 10px;
+}

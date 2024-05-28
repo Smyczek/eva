@@ -1,0 +1,113 @@
+{{ 'eva-unique-formula.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="eva-unique-formula color-{{ section.settings.color_scheme }} gradient{% unless section.settings.background_style == 'none' and settings.text_boxes_border_thickness > 0 or settings.text_boxes_shadow_opacity > 0 %} background-{{ section.settings.background_style }}{% endunless %}{% if section.settings.title == blank %} no-heading{% endif %}{% if section.settings.custom_class != blank %} {{ section.settings.custom_class }}{% endif %}">
+    {% if section.settings.section_img != blank %}
+        <img class="eva-unique-formula-image" src="{{ section.settings.section_img | image_url }}" width="{{section.settings.section_img.width }}" height="{{section.settings.section_img.height }}" alt="{{ section.settings.section_img.alt }}" loading="lazy">
+    {% endif %}
+    <div
+    class="page-width section-{{ section.id }}-padding isolate{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+    {% if settings.animations_reveal_on_scroll %}
+      data-cascade
+    {% endif %}
+    >
+        <div class="eva-unique-formula-content">
+            {{ section.settings.title }}
+            <div class="eva-unique-formula-text">{{ section.settings.text }}</div>
+            <div class="eva-unique-formula-stars"><svg width="97" height="21" viewBox="0 0 97 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.2483 0.634277L12.407 7.5943H19.3925L13.7411 11.8958L15.8997 18.8559L10.2483 14.5543L4.5969 18.8559L6.75555 11.8958L1.10413 7.5943H8.08967L10.2483 0.634277Z" fill="white"/>
+                <path d="M29.4779 0.634277L31.6366 7.5943H38.6221L32.9707 11.8958L35.1294 18.8559L29.4779 14.5543L23.8265 18.8559L25.9852 11.8958L20.3337 7.5943H27.3193L29.4779 0.634277Z" fill="white"/>
+                <path d="M48.7074 0.634277L50.8661 7.5943H57.8516L52.2002 11.8958L54.3588 18.8559L48.7074 14.5543L43.056 18.8559L45.2147 11.8958L39.5632 7.5943H46.5488L48.7074 0.634277Z" fill="white"/>
+                <path d="M67.937 0.634277L70.0957 7.5943H77.0812L71.4298 11.8958L73.5885 18.8559L67.937 14.5543L62.2856 18.8559L64.4443 11.8958L58.7928 7.5943H65.7784L67.937 0.634277Z" fill="white"/>
+                <path d="M87.1667 0.634277L89.3253 7.5943H96.3108L90.6594 11.8958L92.8181 18.8559L87.1667 14.5543L81.5152 18.8559L83.6739 11.8958L78.0225 7.5943H85.008L87.1667 0.634277Z" fill="white"/>
+                </svg>
+            </div>
+            <div class="eva-unique-formula-review">
+            {{ section.settings.review }}  
+            </div>           
+        </div>
+    </div>
+
+</div>
+
+{% schema %}
+{
+  "name": "Eva Unique Formula",
+  "class": "section",
+  "tag": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "liquid",
+      "id": "title",
+      "default": "Satisfaction Guaranteed",
+      "label": "Title"
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Text"
+    },
+    {
+      "type": "richtext",
+      "id": "review",
+      "label": "Review text"
+    },
+    {
+        "type": "color_scheme",
+        "id": "color_scheme",
+        "label": "t:sections.all.colors.label",
+        "default": "scheme-1"
+    },
+    {
+        "type": "image_picker",
+        "id": "section_img",
+        "label": "Section Image"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    }
+  ],
+  "presets": [
+    {
+      "name": "Eva Unique Formula"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,239 @@
+{{ 'eva-difference.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="eva-difference color-{{ section.settings.color_scheme }} gradient{% unless section.settings.background_style == 'none' and settings.text_boxes_border_thickness > 0 or settings.text_boxes_shadow_opacity > 0 %} background-{{ section.settings.background_style }}{% endunless %}{% if section.settings.title == blank %} no-heading{% endif %}{% if section.settings.custom_class != blank %} {{ section.settings.custom_class }}{% endif %}">
+  <div
+    class="page-width section-{{ section.id }}-padding isolate{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+    {% if settings.animations_reveal_on_scroll %}
+      data-cascade
+    {% endif %}
+    >
+    <div class="eva-difference__content">
+        <div class="col">
+            <h2 class="title inline-richtext {{ section.settings.heading_size }}">
+                {{ section.settings.title }}
+            </h2>
+            <div class="eva-difference_steps">
+                <div class="eva-difference_steps_step">
+                    <div class="step-number">1</div>
+                    {{ section.settings.step_1_txt }}
+                </div>
+                <div class="eva-difference_steps_step">
+                    <div class="step-number">2</div>
+                    {{ section.settings.step_2_txt }}
+                </div>
+                <div class="eva-difference_steps_step">
+                    <div class="step-number">3</div>
+                    {{ section.settings.step_3_txt }}
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h2 class="title inline-richtext {{ section.settings.heading_size }}">
+                <a class="link full-unstyled-link" href="{{ section.settings.ourstory_link }}">Our Story <svg width="45" height="31" viewBox="0 0 45 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.88037 15.2904L37.0442 15.2904" stroke="white" stroke-width="4" stroke-linecap="round"/>
+                    <path d="M33.8118 2.62708L42.3696 15.2926L32.7848 28.3003" stroke="white" stroke-width="4" stroke-linecap="round"/>
+                    </svg>
+                </a>
+            </h2>
+            <div class="eva-difference_table">
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Eva Naturals Difference</td>
+                            <td>Us</td>
+                            <td>Them</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for block in section.blocks %}
+                        <tr>
+                            <td>{{ block.settings.difference_text }}</td>
+                            <td>
+                                {% if block.settings.us_checked %}
+                                    <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.49762 14.0976L11.6233 22.0176L23.7524 1.8418" stroke="#5691A1" stroke-width="4"/>
+                                    </svg>
+                                {% else %}
+                                    <svg width="25" height="3" viewBox="0 0 25 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <line x1="0.602661" y1="1.45264" x2="24.6473" y2="1.45264" stroke="#8EBCCA" stroke-width="2"/>
+                                    </svg>
+                                {% endif %}
+                            </td>
+                            <td>
+                                {% if block.settings.them_checked %}
+                                    <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.49762 14.0976L11.6233 22.0176L23.7524 1.8418" stroke="#5691A1" stroke-width="4"/>
+                                    </svg>
+                                {% else %}
+                                    <svg width="25" height="3" viewBox="0 0 25 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <line x1="0.602661" y1="1.45264" x2="24.6473" y2="1.45264" stroke="#8EBCCA" stroke-width="2"/>
+                                    </svg>
+                                {% endif %}
+                            </td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Eva Difference",
+  "class": "section",
+  "tag": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "title",
+      "default": "EVA NATURALS DIFFERENCE",
+      "label": "Title left Column"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        {
+          "value": "h2",
+          "label": "t:sections.all.heading_size.options__1.label"
+        },
+        {
+          "value": "h1",
+          "label": "t:sections.all.heading_size.options__2.label"
+        },
+        {
+          "value": "h0",
+          "label": "t:sections.all.heading_size.options__3.label"
+        }
+      ],
+      "default": "h1",
+      "label": "t:sections.all.heading_size.label"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-1"
+    },
+    {
+      "type": "header",
+      "content": "Steps content"
+    },
+    {
+        "type": "inline_richtext",
+        "id": "step_1_txt",
+        "default": "Step text",
+        "label": "Step 1 text"
+    },
+    {
+        "type": "inline_richtext",
+        "id": "step_2_txt",
+        "default": "Step text",
+        "label": "Step 2 text"
+    },
+    {
+        "type": "inline_richtext",
+        "id": "step_3_txt",
+        "default": "Step text",
+        "label": "Step 3 text"
+    },
+    {
+        "type": "header",
+        "content": "Column right"
+    },
+    {
+        "type": "url",
+        "id": "ourstory_link",
+        "label": "Our Story link"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    },
+    {
+      "type": "text",
+      "id": "custom_class",
+      "label": "Custom css class"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "difference",
+      "name": "Difference",
+      "settings": [
+        {
+          "type": "inline_richtext",
+          "id": "difference_text",
+          "default": "Difference text",
+          "label": "Difference text"
+        },
+        {
+          "type": "checkbox",
+          "id": "us_checked",
+          "default": true,
+          "label": "Us Checked?"
+        },
+        {
+          "type": "checkbox",
+          "id": "them_checked",
+          "label": "Them Checked?"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Eva Difference",
+      "blocks": [
+        {
+          "type": "difference"
+        },
+        {
+          "type": "difference"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

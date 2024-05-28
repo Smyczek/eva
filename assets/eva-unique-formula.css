@@ -1,0 +1,60 @@
+.eva-unique-formula-image {
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (min-width: 749px) {
+    .eva-unique-formula-content {
+        width: 50%;
+    }
+
+    .eva-unique-formula-image {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 40%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.eva-unique-formula {
+    position: relative;
+    overflow: hidden;
+    background: #8EBCCA;
+}
+
+.eva-unique-formula-content p {
+    margin: 0;
+}
+
+.eva-unique-formula-content h2 {
+    font-weight: 700;
+    font-size: 3.3rem;
+    margin: 0;
+    font-weight: 400;
+}
+
+.eva-unique-formula-content h2 strong {
+    font-weight: 700;
+}
+
+.eva-unique-formula-content h2 span {
+    padding: 0 5px;
+    background-color: #ACCED9CC;
+}
+
+.eva-unique-formula-content .eva-unique-formula-text {
+    margin-top: 0;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    letter-spacing: 0;
+    padding-right: 15%;
+}
+
+.eva-unique-formula-review {
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+}

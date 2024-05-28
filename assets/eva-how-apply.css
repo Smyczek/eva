@@ -1,0 +1,152 @@
+.eva-how-apply {
+    overflow: hidden;
+}
+
+.eva-how-apply .prodcut-types {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.eva-how-apply .prodcut-types svg {
+    width: 100%;
+    height: auto;
+}
+
+.eva-how-apply .how-to-header-wrapper {
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    width: 25%;
+    position: relative;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.how-to-header-wrapper h3 {
+    margin: 10px 0;
+    font-size: 3.4rem;
+    line-height: 3.5rem;
+}
+
+.eva-how-apply__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #53575A;
+    padding-right: 40px;
+}
+
+.eva-how-apply__text p {
+    font-size: 1.9rem;
+    margin: 0;
+    line-height: 2.6rem;
+}
+
+.eva-how-apply__text h2 {
+    color: #53575A;
+    margin: 0;
+    font-size: 3.1rem;
+}
+
+.eva-how-apply-content {
+    display: flex;
+}
+
+.prodcut-types-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+}
+
+.prodcut-types-container:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    bottom: 0;
+    background-color: #8EBCCA;
+}
+
+.eva-how-apply .prodcut-types {
+    width: 100%;
+}
+
+.eva-how-apply .prodcut-types div svg {
+    height: 70%;
+}
+
+.eva-how-apply .prodcut-types div {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.eva-how-apply .prodcut-types span {
+    color: #8EB6C0;
+    display: block;
+    transform-origin: bottom left;
+    left: 50%;
+    bottom: 0;
+    transform: rotate(-90deg) translateY(50%);
+    position: absolute;
+    bottom: 20%;
+    font-weight: 700;
+}
+
+.eva-how-apply .prodcut-types .cleanser-prod span {
+    left: 47%;
+}
+
+.eva-how-apply .prodcut-types .serum-prod span {
+    bottom: 18%;
+}
+
+.eva-how-apply .prodcut-types .selected span {
+    color: #BDD5DC;
+}
+
+.eva-how-apply .prodcut-types .product-type {
+    fill: #cee2e8;
+}
+
+.eva-how-apply .prodcut-types .selected .product-type {
+    fill: #71A4B2;
+}
+
+@media screen and (max-width: 749px) {
+    .eva-how-apply-content {
+        flex-direction: column;
+    }
+
+    .prodcut-types-container {
+        flex-direction: column;
+    }
+
+    .eva-how-apply .how-to-header-wrapper {
+        width: 100%;
+    }
+
+    .eva-how-apply .how-to-header-wrapper br {
+        display: none;
+    }
+
+    .how-to-header-wrapper h3 {
+        text-align: center;
+    }
+
+    .eva-how-apply__text {
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    .prodcut-types-container:before {
+        left: 0;
+    }
+
+    .eva-how-apply .prodcut-types {
+        width: 80%;
+    }
+}

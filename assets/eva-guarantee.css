@@ -1,0 +1,39 @@
+.eva-guarantee {
+    position: relative;
+    overflow: hidden;
+}
+
+.eva-guarantee-image {
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (min-width: 749px) {
+    .eva-guarantee-image {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 40%;
+        height: 100%;
+        object-fit: cover;
+        border-left: 5px solid #fff;
+    }
+
+    .eva-guarantee-content {
+        width: 35%;
+    }
+}
+
+.eva-guarantee-content h2 {
+    font-weight: 700;
+    font-size: 3.3rem;
+    margin-bottom: 0;
+}
+
+.eva-guarantee-content p {
+    margin-top: 0;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    letter-spacing: 0;
+}

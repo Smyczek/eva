@@ -1,0 +1,130 @@
+{{ 'eva-results.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="eva-results color-{{ section.settings.color_scheme }} gradient{% unless section.settings.background_style == 'none' and settings.text_boxes_border_thickness > 0 or settings.text_boxes_shadow_opacity > 0 %} background-{{ section.settings.background_style }}{% endunless %}{% if section.settings.title == blank %} no-heading{% endif %}{% if section.settings.custom_class != blank %} {{ section.settings.custom_class }}{% endif %}">
+    <div class="page-width section-{{ section.id }}-padding isolate{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+    {% if settings.animations_reveal_on_scroll %}
+      data-cascade
+    {% endif %}
+    >
+        <div class="eva-results-content">
+            <h2>Trust Our <br><span>Customers <strong>Results!</strong></span></h2>
+            <div class="eva-results-result">
+                {{ section.settings.result }}
+                <small>{{ section.settings.note }}</small>
+            </div>           
+        </div>
+    </div>
+    <div class="eva-results-images">
+        {% if section.settings.img_before != blank %}
+            <div class="eva-results-image-before">
+                <span>{{ section.settings.before_text }}</span>
+                <img src="{{ section.settings.img_before | image_url }}" width="{{section.settings.img_before.width }}" height="{{section.settings.img_before.height }}" alt="{{ section.settings.img_before.alt }}" loading="lazy">
+            </div>
+        {% endif %}
+        {% if section.settings.img_after != blank %}
+            <div class="eva-results-image-after">
+                <span>{{ section.settings.after_text }}</span>
+                <img src="{{ section.settings.img_after | image_url }}" width="{{section.settings.img_after.width }}" height="{{section.settings.img_after.height }}" alt="{{ section.settings.img_after.alt }}" loading="lazy">
+            </div>
+        {% endif %}
+    </div>
+</div>
+
+{% schema %}
+{
+  "name": "Eva Results",
+  "class": "section",
+  "tag": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Text"
+    },
+    {
+      "type": "richtext",
+      "id": "result",
+      "label": "Result text"
+    },
+    {
+      "type": "text",
+      "id": "note",
+      "label": "Note"
+    },
+    {
+        "type": "color_scheme",
+        "id": "color_scheme",
+        "label": "t:sections.all.colors.label",
+        "default": "scheme-1"
+    },
+    {
+        "type": "text",
+        "id": "before_text",
+        "default": "BEFORE",
+        "label": "Before_text"
+    },
+    {
+        "type": "image_picker",
+        "id": "img_before",
+        "label": "Before Image"
+    },
+    {
+        "type": "text",
+        "id": "after_text",
+        "default": "AFTER 4 WEEKS",
+        "label": "After_text"
+    },
+    {
+        "type": "image_picker",
+        "id": "img_after",
+        "label": "After Image"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    }
+  ],
+  "presets": [
+    {
+      "name": "Eva Results"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,653 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "reviews_from_amazon_amazon_ratings_pxjJmw": {
+          "type": "shopify:\/\/apps\/reviews-from-amazon\/blocks\/Amazon ratings\/d2a0c9ad-3f97-43c4-9e0c-bc1a4007a201",
+          "settings": {
+            "heading": "Amazon ratings"
+          }
+        },
+        "bb8972ec-7049-40ec-ba9e-0fe48e919fa6": {
+          "type": "shopify:\/\/apps\/okendo\/blocks\/star-rating\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "settings": {
+            "product": "{{product}}"
+          }
+        },
+        "2c024d98-89cd-479f-93ed-5f41642ed0de": {
+          "type": "description",
+          "settings": {
+            "description_length": "short"
+          }
+        },
+        "caption": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.descriptors.subtitle.value }}",
+            "text_style": "subtitle"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "507cba2a-db19-4601-bc62-3024185d096f": {
+          "type": "shopify:\/\/apps\/recharge-subscriptions\/blocks\/subscription-widget\/371eed76-0b44-4869-9813-730372ea378e",
+          "settings": {
+            "product": "{{product}}"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": true
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "reviews_from_amazon_amazon_ratings_pxjJmw",
+        "bb8972ec-7049-40ec-ba9e-0fe48e919fa6",
+        "2c024d98-89cd-479f-93ed-5f41642ed0de",
+        "caption",
+        "variant_picker",
+        "price",
+        "507cba2a-db19-4601-bc62-3024185d096f",
+        "quantity_selector",
+        "buy_buttons"
+      ],
+      "settings": {
+        "enable_sticky_info": false,
+        "color_scheme": "",
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "thumbnail_slider",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "mobile_thumbnails": "show",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 12
+      }
+    },
+    "a919fed7-ea86-4149-ad01-4d42c9dbf8e4": {
+      "type": "eva-sikn-types",
+      "blocks": {
+        "66bd9e4f-a864-4f13-bb81-021f74cab701": {
+          "type": "skin_benefits",
+          "settings": {
+            "befit_text": "STIMULATE COLLEGEN PRODUCTION",
+            "befit_icon": "shopify:\/\/shop_images\/Anti_Inflamitory_Icon_f0f8e1ce-f14d-4ad1-947f-c64590c05f21.svg"
+          }
+        },
+        "a28b88bc-87da-470f-b8e9-b0949ff877f9": {
+          "type": "skin_benefits",
+          "settings": {
+            "befit_text": "EVEN TONE & TEXTURE",
+            "befit_icon": "shopify:\/\/shop_images\/calms-sooths-icon.svg"
+          }
+        },
+        "0090088f-e31f-41ea-a7a8-f16495f6a05f": {
+          "type": "skin_benefits",
+          "settings": {
+            "befit_text": "REDUCE FINE LINES & WRINKLES",
+            "befit_icon": "shopify:\/\/shop_images\/Antiaging_icon-03.svg"
+          }
+        },
+        "42aa4966-6389-4778-a0db-6d9999c4ce1b": {
+          "type": "skin_benefits",
+          "disabled": true,
+          "settings": {
+            "befit_text": "REVIVES COMPLEXION",
+            "befit_icon": "shopify:\/\/shop_images\/revives-complexion-icon.svg"
+          }
+        },
+        "b6e525de-376c-473d-8246-982be4a6141c": {
+          "type": "skin_benefits",
+          "disabled": true,
+          "settings": {
+            "befit_text": "FADES DARK SPOTS",
+            "befit_icon": "shopify:\/\/shop_images\/gades-dark-spots-icon.svg"
+          }
+        },
+        "1fbabd0a-470b-4236-88df-6e53cd1f76db": {
+          "type": "skin_types",
+          "settings": {
+            "skin_text": "NORMAL"
+          }
+        },
+        "d5205aed-947d-4d44-a610-f422a23c3e9f": {
+          "type": "skin_types",
+          "settings": {
+            "skin_text": "DRY"
+          }
+        },
+        "95f11126-3623-4e14-adb7-22a2715d21cd": {
+          "type": "skin_types",
+          "settings": {
+            "skin_text": "OILY"
+          }
+        },
+        "fea094d5-9b89-408d-ac00-2780fc544420": {
+          "type": "skin_types",
+          "settings": {
+            "skin_text": "COMBINATION"
+          }
+        }
+      },
+      "block_order": [
+        "66bd9e4f-a864-4f13-bb81-021f74cab701",
+        "a28b88bc-87da-470f-b8e9-b0949ff877f9",
+        "0090088f-e31f-41ea-a7a8-f16495f6a05f",
+        "42aa4966-6389-4778-a0db-6d9999c4ce1b",
+        "b6e525de-376c-473d-8246-982be4a6141c",
+        "1fbabd0a-470b-4236-88df-6e53cd1f76db",
+        "d5205aed-947d-4d44-a610-f422a23c3e9f",
+        "95f11126-3623-4e14-adb7-22a2715d21cd",
+        "fea094d5-9b89-408d-ac00-2780fc544420"
+      ],
+      "settings": {
+        "skinbenefit_heading": "SKIN BENEFITS",
+        "skintype_heading": "SKIN TYPES",
+        "color_scheme": "scheme-3",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "ac5885d3-0af0-4aa3-8019-5f6a08fd37ec": {
+      "type": "collapsible-content",
+      "blocks": {
+        "template--16298644570287__ac5885d3-0af0-4aa3-8019-5f6a08fd37ec-collapsible_row-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What it does",
+            "icon": "none",
+            "row_content": "<p><strong>Experience Advanced Anti-Aging with Our Matrixyl 3000 + Argireline Serum:<\/strong> This serum combines the age-defying benefits of Matrixyl 3000 and Argireline, making it a potent solution for reducing the appearance of fine lines and wrinkles, and improving skin firmness and elasticity.<\/p><ul><li><strong>Powerful Peptide Blend:<\/strong> Matrixyl 3000, featuring Palmitoyl Tripeptide-1 and Palmitoyl Tetrapeptide-7, stimulates collagen production and skin repair. Argireline (Acetyl Hexapeptide-8) is known for its ability to reduce the appearance of expression wrinkles.<\/li><li><strong>Hydration and Soothing:<\/strong> Sodium hyaluronate and aloe vera leaf juice deeply hydrate and soothe the skin, enhancing its plumpness and softness.<\/li><li><strong>Skin Brightening:<\/strong> Sodium Ascorbyl Phosphate, a stable form of Vitamin C, brightens the skin and contributes to a more even skin tone.<\/li><li><strong>Improves Skin Texture:<\/strong> Regular use leads to a smoother, firmer, and more youthful-looking complexion.<\/li><li><strong>Gentle and Effective:<\/strong> Designed to be gentle on the skin, making it suitable for all skin types, including sensitive skin.<\/li><\/ul>",
+            "page": ""
+          }
+        },
+        "template--16298644570287__ac5885d3-0af0-4aa3-8019-5f6a08fd37ec-collapsible_row-2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How to use",
+            "icon": "none",
+            "row_content": "<ol><li><strong>Cleanse Your Skin<\/strong>: Before applying serum, it's essential to start with a clean face. Use a <a href=\"\/collections\/cleansers\" target=\"_blank\" title=\"Cleansers\">cleanser<\/a> to remove dirt, oil, and makeup.<\/li><li><strong>Tone (Optional)<\/strong>: If you use a <a href=\"\/collections\/toners\" target=\"_blank\" title=\"Toners\">toner<\/a>, apply it after cleansing. This step is optional but can help prepare your skin to absorb the serum more effectively.<\/li><li><strong>Exfoliate (Optional 2 to 3 times per week):<\/strong> After cleanser or toner use an <a href=\"\/collections\/exfoliants\" target=\"_blank\" title=\"Exfoliants\">exfoliant<\/a> to remove dead skin cells. <\/li><li><strong>Apply Serum:<\/strong> Apply 3 to 6 pea sized drops of serum to face. The serum is highly concentrated so a little goes a long way. Be sure to cover the entire face and decollete. You can pat skin with fingertips until fully absorbed. <\/li><li><strong>Moisturize (Optional)<\/strong>: Wait a few minutes to allow the serum to full absorb then apply a <a href=\"\/collections\/moisturizers\" target=\"_blank\" title=\"Moisturizers\">moisturizer<\/a> which hydrates your skin and seals in the serum. <\/li><\/ol>",
+            "page": ""
+          }
+        },
+        "template--16298644570287__ac5885d3-0af0-4aa3-8019-5f6a08fd37ec-collapsible_row-3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Ingredients",
+            "icon": "none",
+            "row_content": "<p>Water, Glycerin, Xanthan Gum, Sodium Ascorbyl Phosphate, Acetyl Hexapeptide-8, Palmitoyl Tripeptide-1, Palmitoyl Tetrapeptide-7, Aloe Barbadensis Leaf Juice, Sodium Hyaluronate, Sclerotium Gum, Acetic Acid, Polysorbate 20, Butylene Glycol, Carbomer, Potassium Sorbate, Sodium Benzoate, Phenoxyethanolhell<\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16298644570287__ac5885d3-0af0-4aa3-8019-5f6a08fd37ec-collapsible_row-1",
+        "template--16298644570287__ac5885d3-0af0-4aa3-8019-5f6a08fd37ec-collapsible_row-2",
+        "template--16298644570287__ac5885d3-0af0-4aa3-8019-5f6a08fd37ec-collapsible_row-3"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "scheme-1",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "custom_class": "eva-faq",
+        "padding_top": 36,
+        "padding_bottom": 52
+      }
+    },
+    "bde3781d-47cd-4cf9-89e9-1144247a0f80": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--16298644570287__bde3781d-47cd-4cf9-89e9-1144247a0f80-column-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/p1.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--16298644570287__bde3781d-47cd-4cf9-89e9-1144247a0f80-column-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/p2.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--16298644570287__bde3781d-47cd-4cf9-89e9-1144247a0f80-column-3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/p3.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "a07190ed-c82f-49c9-9654-4ba10d0fef41": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/p4.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "1f839751-c498-428c-b211-42b4592b7fb2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/p5.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16298644570287__bde3781d-47cd-4cf9-89e9-1144247a0f80-column-1",
+        "template--16298644570287__bde3781d-47cd-4cf9-89e9-1144247a0f80-column-2",
+        "template--16298644570287__bde3781d-47cd-4cf9-89e9-1144247a0f80-column-3",
+        "a07190ed-c82f-49c9-9654-4ba10d0fef41",
+        "1f839751-c498-428c-b211-42b4592b7fb2"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "#NaturallyBeautiful Is how every person should feel.",
+        "heading_size": "h2",
+        "subtitle": "#EvaNaturals",
+        "image_width": "full",
+        "image_ratio": "square",
+        "columns_desktop": 5,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "custom_class": "naturallybeautiful"
+      }
+    },
+    "1907336b-0c75-403e-a745-82385a0a0c16": {
+      "type": "eva-why-choose",
+      "blocks": {
+        "template--16298644570287__1907336b-0c75-403e-a745-82385a0a0c16-whychoose-1": {
+          "type": "whychoose",
+          "settings": {
+            "why": "+ Comprehensive Skin Hydration"
+          }
+        },
+        "991d93c2-206b-4421-b982-cadbc7de2c13": {
+          "type": "whychoose",
+          "settings": {
+            "why": "+ Anti-Aging Benefits"
+          }
+        },
+        "92b5db70-a28f-4c7e-a750-85c0c40c633f": {
+          "type": "whychoose",
+          "settings": {
+            "why": "+ Brightening and Tone-Evening"
+          }
+        },
+        "84a533d4-75da-477e-aeca-97944e6b088b": {
+          "type": "whychoose",
+          "settings": {
+            "why": "+ Visibly reduces the size of pores"
+          }
+        }
+      },
+      "block_order": [
+        "template--16298644570287__1907336b-0c75-403e-a745-82385a0a0c16-whychoose-1",
+        "991d93c2-206b-4421-b982-cadbc7de2c13",
+        "92b5db70-a28f-4c7e-a750-85c0c40c633f",
+        "84a533d4-75da-477e-aeca-97944e6b088b"
+      ],
+      "settings": {
+        "product_name": "Matrixyl 3000 Serum?",
+        "color_scheme": "scheme-3",
+        "section_img": "shopify:\/\/shop_images\/shopify_banners_78.png",
+        "padding_top": 92,
+        "padding_bottom": 96
+      }
+    },
+    "054e0a27-8952-4c04-b633-2d609478537b": {
+      "type": "eva-guarantee",
+      "settings": {
+        "title": "Satisfaction Guaranteed",
+        "text": "<p>With so many skincare products promising amazing results, it’s hard to know which brands you can trust. We’re so confident that you’ll love our skin serum, we’re offering it with our money back guarantee. You can try it risk free today!<\/p>",
+        "color_scheme": "scheme-3",
+        "section_img": "shopify:\/\/shop_images\/shopify_banners_81.png",
+        "padding_top": 56,
+        "padding_bottom": 56
+      }
+    },
+    "8d18d0be-8d77-4388-b921-83e5a3e2c91b": {
+      "type": "eva-ingredients",
+      "blocks": {
+        "template--16298644570287__8d18d0be-8d77-4388-b921-83e5a3e2c91b-ingredient-1": {
+          "type": "ingredient",
+          "settings": {
+            "ingredinet_title": "<p>VITAMIN C <br\/>+ PEPTIDES<\/p>",
+            "ingredinet_subtitle": "<p>Brighten & Clear<\/p>"
+          }
+        },
+        "15f0ce92-8145-4e28-8184-3e7b9dfeb743": {
+          "type": "ingredient",
+          "settings": {
+            "ingredinet_title": "<p>MATRIXYL 3000<\/p><p>+ ARGIRELINE<\/p>",
+            "ingredinet_subtitle": "<p>Firm & Tighten<\/p>"
+          }
+        },
+        "07b2ae34-3aae-48f9-8cb5-7ff442d514ae": {
+          "type": "ingredient",
+          "settings": {
+            "ingredinet_title": "<p>ALOE VERA <\/p><p>+ HYALURONIC ACID<\/p>",
+            "ingredinet_subtitle": "<p>Hydrate & Soothe<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16298644570287__8d18d0be-8d77-4388-b921-83e5a3e2c91b-ingredient-1",
+        "15f0ce92-8145-4e28-8184-3e7b9dfeb743",
+        "07b2ae34-3aae-48f9-8cb5-7ff442d514ae"
+      ],
+      "settings": {
+        "title": "CLEAN &  EFFECTIVE INGREDIENTS",
+        "color_scheme": "scheme-4",
+        "background_style": "primary",
+        "padding_top": 56,
+        "padding_bottom": 100
+      }
+    },
+    "2f8644f9-40a4-4398-a368-e5ca1d620bf8": {
+      "type": "eva-how-apply",
+      "settings": {
+        "text": "<p>Use morning or night.<br\/>1. Wash face and then dry.<br\/>2. Apply a small amount to your entire face, neck and decollete.<br\/>3. Allow to dry.<br\/>4. Follow with a moisturizer.<\/p>",
+        "cleanser": false,
+        "toner": false,
+        "exfoliant": false,
+        "eyes": false,
+        "serum": true,
+        "cream": false,
+        "color_scheme": "scheme-3",
+        "padding_top": 24,
+        "padding_bottom": 24
+      }
+    },
+    "37c41915-f2f9-4932-a635-f6eecf55040d": {
+      "type": "eva-unique-formula",
+      "settings": {
+        "title": "<h2>A unique <strong>formula<\/strong> that <span>delivers <strong>results<\/strong>.<\/span><\/h2>",
+        "text": "<p>Our #1 Matrixyl 3000 Argireline Vitamin C Serum is an all-in-one formula that simplifies skincare! We brought together some of the most potent ingredients to address a wide range of skin concerns.<\/p>",
+        "review": "<p><strong>This is a great serum!<\/strong> I use it am and pm before I moisturize. It gives my skin a glow. I use it in my skincare routine. I believe a product, any quality product works, if used correctly in a skincare routine. I am 75 years old, and ppl do not believe my age. I attribute it to great products, a skincare routine and overall self care. - SSan<\/p>",
+        "color_scheme": "scheme-3",
+        "section_img": "shopify:\/\/shop_images\/shopify_banners_80.png",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "7b557e28-5326-42e9-9545-92aef0f9ac0f": {
+      "type": "eva-results",
+      "disabled": true,
+      "settings": {
+        "text": "",
+        "result": "<p>Check out the Results after using Eva Naturals Vitamin C+ serum for only 1 month.<\/p>",
+        "note": "*Unretouched results from an actual customer",
+        "color_scheme": "scheme-3",
+        "before_text": "BEFORE",
+        "img_before": "shopify:\/\/shop_images\/before-img.png",
+        "after_text": "AFTER 4 WEEKS",
+        "img_after": "shopify:\/\/shop_images\/after-img.png",
+        "padding_top": 56,
+        "padding_bottom": 56
+      }
+    },
+    "89a54029-d5eb-490c-9969-68f290d60877": {
+      "type": "eva-welcome-video",
+      "settings": {
+        "title": "<strong>Welcome to<\/strong> EVA NATURALS:",
+        "text": "<p>Eva Naturals is a boutique, family-owned skincare company located in the heart of Cajun country, South Louisiana. We create targeted skincare with high-performance botanicals and safe science-based ingredients that produce powerful results.<\/p><p>We're forging a path to be at the forefront of the accessible clean beauty revolution as advocates for your skin, the environment, and our global community.<\/p><p>Creating safe, cost-effective, and focused skincare with a responsible blend of potent botanicals and non-toxic actives is just what we do, but seeing the impact our products make on the well-being of our customers is what drives us.<\/p>",
+        "color_scheme": "scheme-3",
+        "video": "shopify:\/\/files\/videos\/EN_BUNNY_RD6.mp4",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "1703001733740f67b4": {
+      "type": "apps",
+      "blocks": {
+        "reviews_from_amazon_amazon_reviews_BqyqF4": {
+          "type": "shopify:\/\/apps\/reviews-from-amazon\/blocks\/Amazon reviews\/d2a0c9ad-3f97-43c4-9e0c-bc1a4007a201",
+          "settings": {
+            "heading": "Amazon reviews"
+          }
+        },
+        "734a07c9-99e4-46e8-969d-f3b9540c1ae8": {
+          "type": "shopify:\/\/apps\/okendo\/blocks\/reviews-widget\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "settings": {
+            "product": "{{product}}",
+            "widget_type": "reviews_widget"
+          }
+        }
+      },
+      "block_order": [
+        "reviews_from_amazon_amazon_reviews_BqyqF4",
+        "734a07c9-99e4-46e8-969d-f3b9540c1ae8"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "642face3-fb29-4a17-971f-5544deb43fea": {
+      "type": "eva-loved-by",
+      "blocks": {
+        "template--16298644570287__642face3-fb29-4a17-971f-5544deb43fea-logo-1": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/people-logo_f72b90e4-1cd2-4692-9640-a3585d387376.svg"
+          }
+        },
+        "bcd98c1a-8215-45a9-9500-bbd1d30e37b1": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/instyle-logo_00fb6d78-aede-4c30-ba1b-390ead3b5220.svg"
+          }
+        },
+        "bfb73a31-c7e1-4d57-8256-8fe9257b0f70": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/glamour-logo_c176baef-f8aa-4951-9bb4-2b6e3ca4f99d.svg"
+          }
+        },
+        "4a659d5f-29d8-4200-94eb-90f0b4edfccd": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/elle-logo.svg"
+          }
+        },
+        "7e996e78-49e3-4fcf-8bb6-d1a0d70277d1": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/readers-digest-logo.svg"
+          }
+        },
+        "90683258-c9cd-42d4-a710-86e0be8736aa": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/bustle-logo.svg"
+          }
+        },
+        "b56cb547-5315-491b-8e22-5a27d021d603": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/buzzfeed-logo.svg"
+          }
+        },
+        "5c9b7469-cb77-47b3-8dcc-a2d77cf5e661": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/healthline-logo.svg"
+          }
+        },
+        "79f86832-1277-4208-83a3-9845482dbe38": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/et-logo.svg"
+          }
+        }
+      },
+      "block_order": [
+        "template--16298644570287__642face3-fb29-4a17-971f-5544deb43fea-logo-1",
+        "bcd98c1a-8215-45a9-9500-bbd1d30e37b1",
+        "bfb73a31-c7e1-4d57-8256-8fe9257b0f70",
+        "4a659d5f-29d8-4200-94eb-90f0b4edfccd",
+        "7e996e78-49e3-4fcf-8bb6-d1a0d70277d1",
+        "90683258-c9cd-42d4-a710-86e0be8736aa",
+        "b56cb547-5315-491b-8e22-5a27d021d603",
+        "5c9b7469-cb77-47b3-8dcc-a2d77cf5e661",
+        "79f86832-1277-4208-83a3-9845482dbe38"
+      ],
+      "settings": {
+        "title": "LOVED BY:",
+        "color_scheme": "scheme-3",
+        "padding_top": 56,
+        "padding_bottom": 56
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "heading": "TAKE A LOOK AT OUR OTHER PRODUCTS",
+        "heading_size": "h2",
+        "products_to_show": 3,
+        "columns_desktop": 3,
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": true,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
+    "e6491c9c-b6e0-48bd-acb4-61485d039410": {
+      "type": "collapsible-content",
+      "blocks": {
+        "template--16298644570287__e6491c9c-b6e0-48bd-acb4-61485d039410-collapsible_row-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Satisfaction Guarantee",
+            "icon": "none",
+            "row_content": "<p>If your order arrives with any issues or defects, just let us know. You’re covered by our 90-day money back guarantee.<\/p>",
+            "page": ""
+          }
+        },
+        "template--16298644570287__e6491c9c-b6e0-48bd-acb4-61485d039410-collapsible_row-2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Secure ordering",
+            "icon": "none",
+            "row_content": "<p>Safety is our top priority. With our secure ordering system, you can rest assured knowing your personal information is carefully protected.<\/p>",
+            "page": ""
+          }
+        },
+        "template--16298644570287__e6491c9c-b6e0-48bd-acb4-61485d039410-collapsible_row-3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Easy Returns",
+            "icon": "none",
+            "row_content": "<p>Quick, easy and convenient, we make the return process hassle-free with no questions asked.<\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16298644570287__e6491c9c-b6e0-48bd-acb4-61485d039410-collapsible_row-1",
+        "template--16298644570287__e6491c9c-b6e0-48bd-acb4-61485d039410-collapsible_row-2",
+        "template--16298644570287__e6491c9c-b6e0-48bd-acb4-61485d039410-collapsible_row-3"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "scheme-3",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "custom_class": "eva-faq",
+        "padding_top": 56,
+        "padding_bottom": 56
+      }
+    }
+  },
+  "order": [
+    "main",
+    "a919fed7-ea86-4149-ad01-4d42c9dbf8e4",
+    "ac5885d3-0af0-4aa3-8019-5f6a08fd37ec",
+    "bde3781d-47cd-4cf9-89e9-1144247a0f80",
+    "1907336b-0c75-403e-a745-82385a0a0c16",
+    "054e0a27-8952-4c04-b633-2d609478537b",
+    "8d18d0be-8d77-4388-b921-83e5a3e2c91b",
+    "2f8644f9-40a4-4398-a368-e5ca1d620bf8",
+    "37c41915-f2f9-4932-a635-f6eecf55040d",
+    "7b557e28-5326-42e9-9545-92aef0f9ac0f",
+    "89a54029-d5eb-490c-9969-68f290d60877",
+    "1703001733740f67b4",
+    "642face3-fb29-4a17-971f-5544deb43fea",
+    "related-products",
+    "e6491c9c-b6e0-48bd-acb4-61485d039410"
+  ]
+}

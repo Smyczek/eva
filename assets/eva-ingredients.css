@@ -1,0 +1,97 @@
+.eva-ingredients-content {
+    padding-left: 0;
+}
+
+.eva-ingredients-bgimage {
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (min-width: 750px) {
+    .eva-ingredients-bgimage {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: 10%;
+    }
+}
+
+.section-without-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+@media screen and (min-width: 750px) {
+  .eva-ingredients-content.section-without-image ul {
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 750px) and (max-width: 990px) {
+    .eva-ingredients-content:not(.section-without-image) {
+        padding-left: 50%;
+    }
+}
+
+@media screen and (min-width: 991px){
+  .eva-ingredients-content:not(.section-without-image) {
+      padding-left: 25%;
+  }
+}
+
+.eva-ingredients {
+    position: relative;
+    overflow: hidden;
+    background: #5691A1;
+}
+
+.eva-ingredients__title {
+    font-size: 3.4rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.eva-ingredients-content ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.eva-ingredients-content li {
+    position: relative;
+    padding-left: 120px;
+}
+
+.eva-ingredients-content li:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 96px;
+    height: 78px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOTUiIGhlaWdodD0iNzciIHZpZXdCb3g9IjAgMCA5NSA3NyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwXzIwMV82ODQpIj4KPGcgb3BhY2l0eT0iMC4yNiI+CjxwYXRoIGQ9Ik0wLjAxMjEyIDM5LjAyMzFDLTAuMDE5OTUzNCAzMi4wOTc5IDEuODcxMTQgMjUuMjk4MyA1LjQ3NzAzIDE5LjM3MzRDNy44NzE2IDE1LjQyNjcgMTAuOTY4MyAxMS45NDYgMTQuNjE2IDkuMTAxNTFDMTcuMjk0MSA2Ljk3MTI5IDIwLjI1OSA1LjIyNDUxIDIzLjQyNDQgMy45MTIwNUMyNi45NDkgMi40MzE1MiAzMC42ODI0IDEuNTAwODggMzQuNDkyNiAxLjE1M0MzOC45NTA3IDAuNzI0NDU4IDQzLjQ0OTggMS4wNjgzOSA0Ny43ODk3IDIuMTY5NDlDNTMuNDQ4OSAzLjYxNjYxIDU4LjY5MjggNi4zNTA2NSA2My4xMDg0IDEwLjE1NjJDNjQuNzI4NyAxMS41NzcxIDY2LjI0NjcgMTMuMTA5NCA2Ny42NTEgMTQuNzQxOUM2OC40MTk2IDE1LjU5NzkgNjguNDE5NiAxNS43Mjc4IDY3LjQ3NDIgMTYuNDA4TDYyLjI3MDYgMjAuMjY3NkM2MS42Nzg3IDIwLjcxMDkgNjEuNTAyIDIwLjcxMDkgNjEuMDQ4NSAyMC4xMzc3QzU5LjE2NTMgMTcuODEzMiA1Ni45MDg0IDE1LjgxNDQgNTQuMzY5MSAxNC4yMjIyQzQ5Ljk4NzIgMTEuMzg4NCA0NC45MzA3IDkuNzU0ODQgMzkuNzEwNSA5LjQ4NjQ0QzM0LjQ5MDMgOS4yMTgwNSAyOS4yOTEzIDEwLjMyNDQgMjQuNjM4OCAxMi42OTM2QzIwLjgxMjIgMTQuNjU5NCAxNy40NjAyIDE3LjQyNzUgMTQuODE0MSAyMC44MDY4QzEyLjE2ODEgMjQuMTg2MSAxMC4yOTEgMjguMDk2IDkuMzEyNDYgMzIuMjY2OEM3Ljg0MjYxIDM4LjYwNzggOC41MTUwNiA0NS4yNTM2IDExLjIyNTggNTEuMTc2M0MxMy45MzY1IDU3LjA5OTEgMTguNTM0NCA2MS45Njg1IDI0LjMwODMgNjUuMDMxNUMyOC4xMjgxIDY3LjA3MTYgMzIuMzU5NSA2OC4yMzM4IDM2LjY5MDggNjguNDMyNkM0MS42NzUzIDY4LjY5MjcgNDYuNjQ3NyA2Ny43MzIyIDUxLjE3MTcgNjUuNjM1M0M1NC45NDAzIDYzLjg4NjEgNTguMjg1NSA2MS4zNDk3IDYwLjk3OTMgNTguMTk4OUM2NC4zMjE3IDU0LjM1ODggNjYuNTUzMiA0OS42ODg2IDY3LjQzNTcgNDQuNjg2NEM2Ny42OTAyIDQzLjIzOSA2Ny44NDE3IDQxLjc3NTYgNjcuODg5MiA0MC4zMDcxQzY3Ljg4NSA0MC4wODI1IDY3LjkzNDMgMzkuODYwMiA2OC4wMzMyIDM5LjY1ODJDNjguMTMyMSAzOS40NTYzIDY4LjI3NzcgMzkuMjgwNSA2OC40NTggMzkuMTQ1NEM3MC43MTAxIDM3LjM1NjkgNzIuOTQ2OCAzNS41NDU2IDc1LjE5ODggMzMuNzQ5NUM3NS4zOTg3IDMzLjU4MTQgNzUuNTgzMSAzMy4yMzc1IDc1Ljg5ODMgMzMuNDEzM0M3Ni4yMTM0IDMzLjU4OSA3Ni4wOTgxIDMzLjkxNzcgNzYuMTI4OSAzNC4xNzc1Qzc3LjI2MjYgNDMuMDE5OSA3NS4yMjcgNTEuOTc2OCA3MC4zNzk2IDU5LjQ3NTJDNjguNjM0IDYyLjIxMzggNjYuNTMyOSA2NC43MTE2IDY0LjEzMDcgNjYuOTA0QzYwLjgxMTggNjkuOTMwMSA1Ni45ODg1IDcyLjM1ODYgNTIuODMxOSA3NC4wODA2QzQ1LjcwNCA3Ny4wMTc5IDM3Ljg0ODYgNzcuNzQwMSAzMC4yOTk5IDc2LjE1MjJDMjIuNzUxMiA3NC41NjQyIDE1Ljg2MzEgNzAuNzQwNSAxMC41NDIzIDY1LjE4NDRDMy43NjY5OCA1OC4xNDI5IC0wLjAwNjM1NjkxIDQ4Ljc2ODMgMC4wMTIxMiAzOS4wMjMxWiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZD0iTTk0LjU1MjggMTMuNTE5MUM5NC41NzE3IDE0LjUwNCA5NC4yODc0IDE1LjQ3MTEgOTMuNzM3OCAxNi4yOTA3QzkzLjE4ODMgMTcuMTEwNCA5Mi4zOTk5IDE3Ljc0MzMgOTEuNDc4MyAxOC4xMDQ4Qzg4LjA2MjcgMTkuNjA4NyA4NC43NTk1IDIxLjM1MzEgODEuNTkzOCAyMy4zMjQ4Qzc3LjUzNDYgMjUuODE5NiA3My42MTY0IDI4LjUzNDMgNjkuODU2OSAzMS40NTY3QzY2Ljc4MjQgMzMuODc5NSA2My43MDc5IDM2LjQxNjkgNjAuNzg3MiAzOS4wMjMxQzU3LjA2NyA0Mi4zMDk1IDUzLjQ5MjkgNDUuNzQxMSA1MC4wMjY1IDQ5LjI0MTVDNDcuMjY3MSA1MS45OTI5IDQ0LjU1MzkgNTQuNzgyNiA0Mi4wMDk3IDU3LjczMjdDNDEuNTU4OSA1OC4zMDMxIDQwLjk5MDEgNTguNzcwNSA0MC4zNDE5IDU5LjEwMzVDMzkuNjkzNyA1OS40MzY1IDM4Ljk4MTIgNTkuNjI3MSAzOC4yNTI1IDU5LjY2MjdDMzcuNTIzOCA1OS42OTgyIDM2Ljc5NTkgNTkuNTc3NyAzNi4xMTgxIDU5LjMwOTNDMzUuNDQwMiA1OS4wNDEgMzQuODI4MiA1OC42MzEgMzQuMzIzNSA1OC4xMDcyQzMzLjY4NDQgNTcuMzE3NiAzMy4xMzMgNTYuNDYxNyAzMi42Nzg2IDU1LjU1NDVDMzEuMTQxNCA1My4wOTM1IDI5LjQ4MTIgNTAuNzMxOSAyNy43MzY0IDQ4LjQxNjFDMjUuNjkxOCA0NS43MDI5IDIzLjQ5MzYgNDMuMTE5NiAyMS4yNDkyIDQwLjU3NDZDMjAuNDQ3NSAzOS42NDc5IDIwLjAxNyAzOC40NjAzIDIwLjAzOTcgMzcuMjM4MUMyMC4wNjI0IDM2LjAxNiAyMC41MzY3IDM0Ljg0NDkgMjEuMzcyMiAzMy45NDgzQzIyLjIwMDQgMzMuMDkzIDIzLjMwNDQgMzIuNTU0MiAyNC40OTE0IDMyLjQyNTZDMjUuNjc4NCAzMi4yOTcxIDI2Ljg3MzEgMzIuNTg3MiAyNy44NjcxIDMzLjI0NTJDMjguODM1OSAzNC4wNDY4IDI5LjcwNTQgMzQuOTYwMiAzMC40NTczIDM1Ljk2NkMzMy4yNTggMzkuMTQ2NyAzNS44NzMxIDQyLjQ4NDQgMzguMjg5NiA0NS45NjI4QzM4LjU2NjMgNDYuMzYwMiAzOC43ODkyIDQ2LjM5MDggMzkuMTUwNCA0Ni4wMTYzQzQxLjYyNTQgNDMuNTAxOCA0NC4wOTI3IDQwLjk3OTcgNDYuNjIxNSAzOC41MTg3QzQ5LjE1MDIgMzYuMDU3NyA1MS43NjM1IDMzLjcwMzcgNTQuMzk5OSAzMS4zNTc0QzU3LjAzNjMgMjkuMDExIDU5LjY3MjcgMjYuNzcxNyA2Mi40MDkgMjQuNjQ3QzY2LjgyNTggMjEuMTI2NSA3MS40NDU0IDE3Ljg2NTEgNzYuMjQ0MiAxNC44Nzk1Qzc5LjczNDIgMTIuNzM2OCA4My4zNTY1IDEwLjgxNDYgODcuMDg5NSA5LjEyNDQ4Qzg5LjMxODUgOC4xMzA5MSA5MS41MzIxIDguNDIxMzQgOTMuMDE1NSA5Ljg4ODc2QzkzLjUxNzQgMTAuMzQ5OCA5My45MTQzIDEwLjkxMjMgOTQuMTc5NCAxMS41Mzg0Qzk0LjQ0NDUgMTIuMTY0NiA5NC41NzE5IDEyLjgzOTkgOTQuNTUyOCAxMy41MTkxWiIgZmlsbD0id2hpdGUiLz4KPC9nPgo8L2c+CjxkZWZzPgo8Y2xpcFBhdGggaWQ9ImNsaXAwXzIwMV82ODQiPgo8cmVjdCB3aWR0aD0iOTQuNTA5OSIgaGVpZ2h0PSI3NiIgZmlsbD0id2hpdGUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAuMDEyMjA3IDAuOTg0ODYzKSIvPgo8L2NsaXBQYXRoPgo8L2RlZnM+Cjwvc3ZnPgo=")
+}
+
+.eva-ingredients-content .ingredinet-title p {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin: 0;
+    line-height: 2.2rem;
+}
+
+.eva-ingredients-content .ingredient-subtitle p {
+    font-size: 1.9rem;
+    margin: 0;
+    line-height: 1.9rem;
+}
